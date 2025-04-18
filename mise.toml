@@ -1,2 +1,6 @@
 [tools]
 ruby = "3.2.4"
+
+[tasks.dev]
+description = "Run the jekyll server locally"
+run = "bundle exec jekyll s"
