@@ -1,5 +1,5 @@
 [tools]
-ruby = "3.2.4"
+ruby = "3.3"
 
 [tasks.dev]
 description = "Run the jekyll server locally"
