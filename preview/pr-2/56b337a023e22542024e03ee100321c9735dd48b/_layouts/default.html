@@ -1,0 +1,79 @@
+{% assign current = page.url | split: '.' | first %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <link rel="icon" href="/favicon.ico">
+      <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+      <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+      <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+      <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+      <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+      <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+      <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+      <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+      <link rel="manifest" href="/manifest.json">
+      <meta name="msapplication-TileColor" content="#ffffff">
+      <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+      <meta name="theme-color" content="#ffffff">
+      <title>{{ site.title }} | {{ page.title }}</title>
+      <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+      <script src="assets/js/ie-emulation-modes-warning.js"></script>
+
+      <!-- Matomo -->
+      <script>
+      var _paq = window._paq = window._paq || [];
+      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function() {
+        var u="https://scienceolympianz.matomo.cloud/";
+        _paq.push(['setTrackerUrl', u+'matomo.php']);
+        _paq.push(['setSiteId', '1']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.async=true; g.src='https://cdn.matomo.cloud/scienceolympianz.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
+      })();
+      </script>
+      <!-- End Matomo Code -->
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="masthead"> <img height="100" src="assets/images/sonz-on-white-header.svg" alt="Science OlympiaNZ" />
+        <h1 class="main-heading">ScienceOlympiaNZ</h1>
+
+        <nav>
+          <ul class="nav nav-justified">
+            <li {% if current == '/' %}class="active"{% endif %}><a href="/">Home</a></li>
+            <li {% if current == '/biology' %}class="active"{% endif %}><a href="/biology">Biology</a></li>
+            <li {% if current == '/chemistry' %}class="active"{% endif %}><a href="/chemistry">Chemistry</a></li>
+            <li {% if current == '/geography' %}class="active"{% endif %}><a href="/geography">Geography</a></li>
+            <li {% if current == '/informatics' %}class="active"{% endif %}><a href="/informatics">Informatics</a></li>
+            <li {% if current == '/maths' %}class="active"{% endif %}><a href="/maths">Mathematics</a></li>
+            <li {% if current == '/physics' %}class="active"{% endif %}><a href="/physics">Physics</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      {{ content }}
+
+      <footer class="footer">
+        <p>&copy; {{ site.time | date: '%Y' }} Science OlympiaNZ
+        </p>
+      </footer>
+    </div>
+
+    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+
+</html>
