@@ -1,0 +1,29 @@
+{
+  "lockfileVersion": 1,
+  "configVersion": 1,
+  "workspaces": {
+    "": {
+      "devDependencies": {
+        "@shopify/prettier-plugin-liquid": "1.10.0",
+        "prettier": "3.6.2",
+      },
+    },
+  },
+  "packages": {
+    "@shopify/liquid-html-parser": ["@shopify/liquid-html-parser@2.9.0", "", { "dependencies": { "line-column": "^1.0.2", "ohm-js": "^17.0.0" } }, "sha512-bkI4tLbU47YUxpgbMa9fgeJjFEMvRNEFL644Yk0ZKo5H1IRzU4pPyCQ6PkGvb0JJnt7OZ+RDGvb6ZLCnAR2Z/A=="],
+
+    "@shopify/prettier-plugin-liquid": ["@shopify/prettier-plugin-liquid@1.10.0", "", { "dependencies": { "@shopify/liquid-html-parser": "^2.9.0", "html-styles": "^1.0.0" }, "peerDependencies": { "prettier": "^2.0.0 || ^3.0.0" } }, "sha512-csHYjwuT34o8ja6EY0dUBYQS5UVwsKwRYxGiuG816Ov0B8lVd8FUjOwWUk2SnrNx3cGgL0no7z+Byapp7sC1Uw=="],
+
+    "html-styles": ["html-styles@1.0.0", "", {}, "sha512-cDl5dcj73oI4Hy0DSUNh54CAwslNLJRCCoO+RNkVo+sBrjA/0+7E/xzvj3zH/GxbbBLGJhE0hBe1eg+0FINC6w=="],
+
+    "isarray": ["isarray@1.0.0", "", {}, "sha512-VLghIWNM6ELQzo7zwmcg0NmTVyWKYjvIeM83yjp0wRDTmUnrM678fQbcKBo6n2CJEF0szoG//ytg+TKla89ALQ=="],
+
+    "isobject": ["isobject@2.1.0", "", { "dependencies": { "isarray": "1.0.0" } }, "sha512-+OUdGJlgjOBZDfxnDjYYG6zp487z0JGNQq3cYQYg5f5hKR+syHMsaztzGeml/4kGG55CSpKSpWTY+jYGgsHLgA=="],
+
+    "line-column": ["line-column@1.0.2", "", { "dependencies": { "isarray": "^1.0.0", "isobject": "^2.0.0" } }, "sha512-Ktrjk5noGYlHsVnYWh62FLVs4hTb8A3e+vucNZMgPeAOITdshMSgv4cCZQeRDjm7+goqmo6+liZwTXo+U3sVww=="],
+
+    "ohm-js": ["ohm-js@17.2.1", "", {}, "sha512-4cXF0G09fAYU9z61kTfkNbKK1Kz/sGEZ5NbVWHoe9Qi7VB7y+Spwk051CpUTfUENdlIr+vt8tMV4/LosTE2cDQ=="],
+
+    "prettier": ["prettier@3.6.2", "", { "bin": { "prettier": "bin/prettier.cjs" } }, "sha512-I7AIg5boAr5R0FFtJ6rCfD+LFsWHp81dolrFD8S79U9tb8Az2nGrJncnMSnys+bpQJfRUzqs9hnA81OAA3hCuQ=="],
+  }
+}
