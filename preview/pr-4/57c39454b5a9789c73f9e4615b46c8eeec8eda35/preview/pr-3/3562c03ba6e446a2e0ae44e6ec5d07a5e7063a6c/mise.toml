@@ -1,0 +1,6 @@
+[tools]
+ruby = "3.3"
+
+[tasks.dev]
+description = "Run the jekyll server locally"
+run = "bundle exec jekyll s --port 4100"
