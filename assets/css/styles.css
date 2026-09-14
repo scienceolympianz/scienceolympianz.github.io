@@ -143,5 +143,5 @@ img.alumni-img {
 }
 
 .clear {
-  float: none;
+  clear: both;
 }
