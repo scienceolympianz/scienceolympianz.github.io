@@ -141,3 +141,7 @@ img.alumni-img {
   max-width: 50%;
   float: left;
 }
+
+.clear {
+  float: none;
+}
